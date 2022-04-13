@@ -1,0 +1,42 @@
+/* 해당 주석 내용 확인 가능 */
+// 해당 주석 내용 확인 불가능
+
+.container{
+  background-color: yellow;
+
+  h1{
+    color: red;
+  }
+
+  p {
+    color: tomato;
+    font: {
+      family: sans-serif;
+      size: 1em;
+      style: normal;
+      weight: 900;
+    };
+    
+    span{
+      color: blue;
+    }
+  }
+}
+
+.first-btn{
+  background-color: blue;
+
+  &:hover{
+    background-color: red;
+  }
+
+}
+
+.second-btn{
+  background-color: orange;
+
+  &:hover{
+    background-color: red;
+  }
+
+}
