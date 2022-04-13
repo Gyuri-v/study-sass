@@ -1,11 +1,15 @@
 /* 해당 주석 내용 확인 가능 */
 // 해당 주석 내용 확인 불가능
 
+$main-color: #ddd;
+$font-color: #2a2a2a;
+
 .container{
-  background-color: yellow;
+  background-color: $main-color;
+  border: 1px solid $main-color; 
 
   h1{
-    color: red;
+    color: $font-color;
   }
 
   p {
@@ -25,6 +29,7 @@
 
 .first-btn{
   background-color: blue;
+  color: $font-color;
 
   &:hover{
     background-color: red;
@@ -34,6 +39,7 @@
 
 .second-btn{
   background-color: orange;
+  color: $font-color;
 
   &:hover{
     background-color: red;

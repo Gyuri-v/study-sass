@@ -1,10 +1,11 @@
 @charset "UTF-8";
 /* 해당 주석 내용 확인 가능 */
 .container {
-  background-color: yellow;
+  background-color: #ddd;
+  border: 1px solid #ddd;
 }
 .container h1 {
-  color: red;
+  color: #2a2a2a;
 }
 .container p {
   color: tomato;
@@ -19,6 +20,7 @@
 
 .first-btn {
   background-color: blue;
+  color: #2a2a2a;
 }
 .first-btn:hover {
   background-color: red;
@@ -26,6 +28,7 @@
 
 .second-btn {
   background-color: orange;
+  color: #2a2a2a;
 }
 .second-btn:hover {
   background-color: red;
