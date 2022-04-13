@@ -1,48 +1,17 @@
-/* 해당 주석 내용 확인 가능 */
-// 해당 주석 내용 확인 불가능
-
-$main-color: #ddd;
-$font-color: #2a2a2a;
-
-.container{
-  background-color: $main-color;
-  border: 1px solid $main-color; 
-
-  h1{
-    color: $font-color;
-  }
-
-  p {
-    color: tomato;
-    font: {
-      family: sans-serif;
-      size: 1em;
-      style: normal;
-      weight: 900;
-    };
-    
-    span{
-      color: blue;
-    }
-  }
+@mixin box-style($bg-color:orange, $font-color:black){
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color;
+  color: $font-color;
 }
 
-.first-btn{
-  background-color: blue;
-  color: $font-color;
-
-  &:hover{
-    background-color: red;
-  }
-
+.one{
+  @include box-style(red, white)
 }
 
-.second-btn{
-  background-color: orange;
-  color: $font-color;
-
-  &:hover{
-    background-color: red;
-  }
-
+.two{
+  @include box-style($font-color: pink)
 }
